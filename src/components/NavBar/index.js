@@ -1,5 +1,6 @@
 
 const NavBar=({setCategories})=>{
+  const navLinkStyle = { cursor: 'pointer' };
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div className="container-fluid">
@@ -10,22 +11,22 @@ const NavBar=({setCategories})=>{
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">        
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('technology')}>Technology</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('technology')}>Technology</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('business')}>Business</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('business')}>Business</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('health')}>Health</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('health')}>Health</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('science')}>Science</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('science')}>Science</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('entertainment')}>Entertainment</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('entertainment')}>Entertainment</div>
         </li>
         <li className="nav-item">
-          <div className="nav-link"  onClick={()=>setCategories('sports')}>Sports</div>
+          <div className="nav-link" style={navLinkStyle} onClick={()=>setCategories('sports')}>Sports</div>
         </li>        
       </ul>
     </div>
