@@ -4,6 +4,7 @@ import NewsItem from '../NewsItem';
 const NewsBoard=({categories})=>{
     const [article,setArticle]=useState([])
     useEffect(()=>{
+        
         const apiKey = process.env.REACT_APP_NEWS_API_KEY;
         let url = `https://newsapi.org/v2/top-headlines?country=in&category=${categories}&apiKey=${apiKey}`;
         fetch(url).then(response=>{if (!response.ok) {
